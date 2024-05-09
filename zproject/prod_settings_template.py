@@ -756,7 +756,7 @@ SOCIAL_AUTH_SAML_SUPPORT_CONTACT = {
 # PROMOTE_SPONSORING_ZULIP = True
 
 ## Controls whether session cookies expire when the browser closes
-SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True #False
 
 ## Session cookie expiry in seconds after the last page load
 SESSION_COOKIE_AGE = 60 * 60 * 24 * 7 * 2  # 2 weeks
@@ -812,7 +812,7 @@ AVATAR_CHANGES_DISABLED = False
 
 ## Controls whether users who have not uploaded an avatar will receive an avatar
 ## from gravatar.com.
-ENABLE_GRAVATAR = True
+ENABLE_GRAVATAR = False #True
 
 ## To override the default avatar image if ENABLE_GRAVATAR is False, place your
 ## custom default avatar image at /home/zulip/local-static/default-avatar.png

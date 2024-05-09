@@ -36,25 +36,26 @@ const get_step = function ($process) {
 };
 
 export function should_show_notifications(ls) {
-    // if the user said to never show banner on this computer again, it will
-    // be stored as `true` so we want to negate that.
-    if (localstorage.supported() && ls.get("dontAskForNotifications") === true) {
-        return false;
-    }
+    return false;
+    // // if the user said to never show banner on this computer again, it will
+    // // be stored as `true` so we want to negate that.
+    // if (localstorage.supported() && ls.get("dontAskForNotifications") === true) {
+    //     return false;
+    // }
 
-    return (
-        // Spectators cannot receive desktop notifications, so never
-        // request permissions to send them.
-        !page_params.is_spectator &&
-        // notifications *basically* don't work on any mobile platforms, so don't
-        // event show the banners. This prevents trying to access things that
-        // don't exist like `Notification.permission`.
-        !util.is_mobile() &&
-        // if permission has not been granted yet.
-        !desktop_notifications.granted_desktop_notifications_permission() &&
-        // if permission is allowed to be requested (e.g. not in "denied" state).
-        desktop_notifications.permission_state() !== "denied"
-    );
+    // return (
+    //     // Spectators cannot receive desktop notifications, so never
+    //     // request permissions to send them.
+    //     !page_params.is_spectator &&
+    //     // notifications *basically* don't work on any mobile platforms, so don't
+    //     // event show the banners. This prevents trying to access things that
+    //     // don't exist like `Notification.permission`.
+    //     !util.is_mobile() &&
+    //     // if permission has not been granted yet.
+    //     !desktop_notifications.granted_desktop_notifications_permission() &&
+    //     // if permission is allowed to be requested (e.g. not in "denied" state).
+    //     desktop_notifications.permission_state() !== "denied"
+    // );
 }
 
 export function should_show_server_upgrade_notification(ls) {

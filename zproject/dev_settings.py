@@ -55,13 +55,13 @@ ALLOWED_HOSTS = ["*"]
 AUTHENTICATION_BACKENDS: Tuple[str, ...] = (
     "zproject.backends.DevAuthBackend",
     "zproject.backends.EmailAuthBackend",
-    "zproject.backends.GitHubAuthBackend",
-    "zproject.backends.GoogleAuthBackend",
-    "zproject.backends.SAMLAuthBackend",
-    # 'zproject.backends.AzureADAuthBackend',
-    "zproject.backends.GitLabAuthBackend",
-    "zproject.backends.AppleAuthBackend",
-    "zproject.backends.GenericOpenIdConnectBackend",
+    # "zproject.backends.GitHubAuthBackend",
+    # "zproject.backends.GoogleAuthBackend",
+    # "zproject.backends.SAMLAuthBackend",
+    # # 'zproject.backends.AzureADAuthBackend',
+    # "zproject.backends.GitLabAuthBackend",
+    # "zproject.backends.AppleAuthBackend",
+    # "zproject.backends.GenericOpenIdConnectBackend",
 )
 
 EXTERNAL_URI_SCHEME = "http://"

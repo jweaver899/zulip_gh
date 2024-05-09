@@ -80,14 +80,14 @@
                         <span class="popover-menu-label">{{t 'Personal settings' }}</span>
                     </a>
                 </li>
-                {{#unless is_guest}}
+                {{!-- {{#unless is_guest}}
                 <li class="link-item popover-menu-inner-list-item hidden-for-spectators">
                     <a href="/stats" target="_blank" rel="noopener noreferrer" class="navigate-link-on-enter popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-bar-chart" aria-hidden="true"></i>
                         <span class="popover-menu-label">{{t 'Usage statistics' }}</span>
                     </a>
                 </li>
-                {{/unless}}
+                {{/unless}} --}}
                 <li class="link-item popover-menu-inner-list-item only-visible-for-spectators">
                     <a tabindex="0" class="change-language-spectator popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-f-globe" aria-hidden="true"></i>
@@ -110,24 +110,24 @@
         </li>
         <li class="hidden-for-spectators popover-menu-outer-list-item">
             <ul class="popover-menu-inner-list">
-                <li class="link-item popover-menu-inner-list-item">
+                {{!-- <li class="link-item popover-menu-inner-list-item">
                     <a href="{{ apps_page_url }}" target="_blank" rel="noopener noreferrer" class="navigate-link-on-enter popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-monitor" aria-hidden="true"></i>
                         <span class="popover-menu-label">{{t 'Desktop & mobile apps' }}</span>
                     </a>
-                </li>
-                <li class="link-item popover-menu-inner-list-item">
+                </li> --}}
+                {{!-- <li class="link-item popover-menu-inner-list-item">
                     <a href="/integrations/" target="_blank" rel="noopener noreferrer" class="navigate-link-on-enter popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-git-pull-request" aria-hidden="true"></i>
                         <span class="popover-menu-label">{{t 'Integrations' }}</span>
                     </a>
-                </li>
-                <li class="link-item popover-menu-inner-list-item">
+                </li> --}}
+                {{!-- <li class="link-item popover-menu-inner-list-item">
                     <a href="/api/" target="_blank" rel="noopener noreferrer" class="navigate-link-on-enter popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-file-text" aria-hidden="true"></i>
                         <span class="popover-menu-label">{{t 'API documentation' }}</span>
                     </a>
-                </li>
+                </li> --}}
                 {{#if show_billing}}
                 <li class="link-item popover-menu-inner-list-item">
                     <a href="/billing/" target="_blank" rel="noopener noreferrer" class="navigate-link-on-enter popover-menu-link">

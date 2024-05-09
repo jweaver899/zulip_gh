@@ -211,14 +211,14 @@ ENABLE_FILE_LINKS = False
 ENABLE_GRAVATAR = True
 INLINE_IMAGE_PREVIEW = True
 INLINE_URL_EMBED_PREVIEW = True
-NAME_CHANGES_DISABLED = False
+NAME_CHANGES_DISABLED = True #False
 AVATAR_CHANGES_DISABLED = False
 PASSWORD_MIN_LENGTH = 6
 PASSWORD_MIN_GUESSES = 10000
 PUSH_NOTIFICATION_BOUNCER_URL: Optional[str] = None
 PUSH_NOTIFICATION_REDACT_CONTENT = False
-SUBMIT_USAGE_STATISTICS = True
-PROMOTE_SPONSORING_ZULIP = True
+SUBMIT_USAGE_STATISTICS = False #True
+PROMOTE_SPONSORING_ZULIP = False #True
 RATE_LIMITING = True
 RATE_LIMITING_AUTHENTICATE = True
 RATE_LIMIT_TOR_TOGETHER = False
@@ -448,8 +448,8 @@ INVITES_NEW_REALM_LIMIT_DAYS = [(1, 100)]
 INVITES_NEW_REALM_DAYS = 7
 
 # Controls for which links are published in portico footers/headers/etc.
-REGISTER_LINK_DISABLED: Optional[bool] = None
-LOGIN_LINK_DISABLED = False
+REGISTER_LINK_DISABLED: Optional[bool] = True #None
+LOGIN_LINK_DISABLED = True #False
 FIND_TEAM_LINK_DISABLED = True
 
 # What domains to treat like the root domain
@@ -502,7 +502,7 @@ SEND_DIGEST_EMAILS = True
 INSTALLATION_NAME = EXTERNAL_HOST
 
 # Used to change the Zulip logo in portico pages.
-CUSTOM_LOGO_URL: Optional[str] = None
+CUSTOM_LOGO_URL: Optional[str] = "/static/images/logo/logo.png" #None
 
 # Random salt used when deterministically generating passwords in
 # development.

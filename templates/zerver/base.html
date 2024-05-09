@@ -7,11 +7,9 @@
         <meta charset="UTF-8" />
         {% block title %}
             {% if user_profile and user_profile.realm.name %}
-                <title>{{user_profile.realm.name}} - Zulip</title>
+                <title>{{user_profile.realm.name}} - Gator</title>
             {% else %}
-                {% if PAGE_TITLE %}
-                <title>{{ PAGE_TITLE }}</title>
-                {% endif %}
+            <title>Gator</title>
             {% endif %}
         {% endblock %}
         <link id="favicon" rel="icon" href="{{ static('images/favicon.svg') }}?v=4" />

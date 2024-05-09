@@ -34,20 +34,20 @@
                         <div class="text">{{t "Bots" }}</div>
                     </li>
                     {{/unless}}
-                    <li tabindex="0" data-section="alert-words">
+                    {{!-- <li tabindex="0" data-section="alert-words">
                         <i class="icon fa fa-book" aria-hidden="true"></i>
                         <div class="text">{{t "Alert words" }}</div>
-                    </li>
+                    </li> --}}
                     {{#if show_uploaded_files_section}}
                     <li tabindex="0" data-section="uploaded-files">
                         <i class="icon fa fa-paperclip" aria-hidden="true"></i>
                         <div class="text">{{t "Uploaded files" }}</div>
                     </li>
                     {{/if}}
-                    <li tabindex="0" data-section="topics">
+                    {{!-- <li tabindex="0" data-section="topics">
                         <i class="icon zulip-icon zulip-icon-topic" aria-hidden="true"></i>
                         <div class="text">{{t "Topics" }}</div>
-                    </li>
+                    </li> --}}
                     <li tabindex="0" data-section="muted-users">
                         <i class="icon fa fa-eye-slash" aria-hidden="true"></i>
                         <div class="text">{{t "Muted users" }}</div>
@@ -75,16 +75,16 @@
                         <div class="text">{{t "Custom emoji" }}</div>
                         <i class="locked fa fa-lock tippy-zulip-tooltip" {{#unless show_emoji_settings_lock}}style="display: none;"{{/unless}} data-tippy-content="{{t 'You do not have permission to add custom emoji.'}}"></i>
                     </li>
-                    <li tabindex="0" data-section="linkifier-settings">
+                    {{!-- <li tabindex="0" data-section="linkifier-settings">
                         <i class="icon fa fa-font" aria-hidden="true"></i>
                         <div class="text">{{t "Linkifiers" }}</div>
                         <i class="locked fa fa-lock tippy-zulip-tooltip" {{#if is_admin}}style="display: none;"{{/if}} data-tippy-content="{{t 'Only organization administrators can edit these settings.' }}"></i>
-                    </li>
-                    <li tabindex="0" data-section="playground-settings">
+                    </li> --}}
+                    {{!-- <li tabindex="0" data-section="playground-settings">
                         <i class="icon fa fa-external-link" aria-hidden="true"></i>
                         <div class="text">{{t "Code playgrounds" }}</div>
                         <i class="locked fa fa-lock tippy-zulip-tooltip" {{#if is_admin}}style="display: none;"{{/if}} data-tippy-content="{{t 'Only organization administrators can edit these settings.' }}"></i>
-                    </li>
+                    </li> --}}
                     {{#unless is_guest}}
                     <li tabindex="0" data-section="user-list-admin">
                         <i class="icon fa fa-user" aria-hidden="true"></i>

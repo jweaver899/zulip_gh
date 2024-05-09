@@ -95,7 +95,7 @@ page can be easily identified in it's respective JavaScript file. -->
                                   maxlength="72" required />
                                 <label for="id_username">
                                     {% if not require_email_format_usernames and email_auth_enabled %}
-                                    {{ _('Email (username@gatorapp.net)') }}
+                                    {{ _('Email (username@appurl)') }}
                                     {% elif not require_email_format_usernames %}
                                     {{ _('Username') }}
                                     {% else %}

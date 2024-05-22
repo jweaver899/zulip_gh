@@ -16,10 +16,10 @@
                         <i class="icon fa fa-user" aria-hidden="true"></i>
                         <div class="text">{{t "Profile" }}</div>
                     </li>
-                    <li tabindex="0" data-section="account-and-privacy">
+                    {{!-- <li tabindex="0" data-section="account-and-privacy">
                         <i class="icon fa fa-lock" aria-hidden="true"></i>
                         <div class="text">{{t "Account & privacy" }}</div>
-                    </li>
+                    </li> --}}
                     <li tabindex="0" data-section="preferences">
                         <i class="icon fa fa-sliders" aria-hidden="true"></i>
                         <div class="text">{{t "Preferences" }}</div>
@@ -70,11 +70,11 @@
                         <div class="text">{{t "Organization permissions" }}</div>
                         <i class="locked fa fa-lock tippy-zulip-tooltip" {{#if is_admin}}style="display: none;"{{/if}} data-tippy-content="{{t 'Only organization administrators can edit these settings.' }}"></i>
                     </li>
-                    <li tabindex="0" data-section="emoji-settings">
+                    {{!-- <li tabindex="0" data-section="emoji-settings">
                         <i class="icon fa fa-smile-o" aria-hidden="true"></i>
                         <div class="text">{{t "Custom emoji" }}</div>
                         <i class="locked fa fa-lock tippy-zulip-tooltip" {{#unless show_emoji_settings_lock}}style="display: none;"{{/unless}} data-tippy-content="{{t 'You do not have permission to add custom emoji.'}}"></i>
-                    </li>
+                    </li> --}}
                     {{!-- <li tabindex="0" data-section="linkifier-settings">
                         <i class="icon fa fa-font" aria-hidden="true"></i>
                         <div class="text">{{t "Linkifiers" }}</div>
@@ -99,13 +99,13 @@
                         <i class="locked fa fa-lock tippy-zulip-tooltip" {{#if is_admin}}style="display: none;"{{/if}} data-tippy-content="{{t 'Only organization administrators can edit these settings.' }}"></i>
                     </li>
                     {{/unless}}
-                    {{#unless is_guest}}
+                    {{!-- {{#unless is_guest}}
                     <li tabindex="0" data-section="bot-list-admin">
                         <i class="icon zulip-icon zulip-icon-smart-toy" aria-hidden="true"></i>
                         <div class="text">{{t "Bots" }}</div>
                         <i class="locked fa fa-lock tippy-zulip-tooltip" {{#if can_create_new_bots}}style="display: none;"{{/if}} data-tippy-content="{{t 'Only organization administrators can edit these settings.' }}"></i>
                     </li>
-                    {{/unless}}
+                    {{/unless}} --}}
                     {{#unless is_guest}}
                     <li tabindex="0" data-section="invites-list-admin">
                         <i class="icon fa fa-user-plus" aria-hidden="true"></i>
